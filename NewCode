@@ -1,0 +1,25 @@
+package Ex02;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your username: ");
+        String username = input.nextLine();
+        if (username.length() <= 6) {
+           System.out.print("Username is not long enough");
+        }
+        System.out.print("Enter password: ");
+        String password = input.nextLine();
+        if (password.length() > 8) {
+           System.out.print("Account create successfully!");
+        } else {
+           System.out.print("Password is not long enough");
+        }
+        
+	}
+
+}
